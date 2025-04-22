@@ -1,4 +1,5 @@
 import "./App.scss";
+import Header from "./components/Header";
 import { animate, createScope, Scope } from "animejs";
 import { useEffect, useRef } from "react";
 
@@ -35,24 +36,7 @@ function App() {
 
   return (
     <div ref={root}>
-      <div className="header">
-        <div className="logo">
-          <div className="name">Kevin K Gomez</div>
-          {/* Componentize the "software" string */}
-          <div className="sentence">
-            is a <span>s</span>
-            <span>o</span>
-            <span>f</span>
-            <span>t</span>
-            <span>w</span>
-            <span>a</span>
-            <span>r</span>
-            <span>e</span>
-            <span>&nbsp;</span>
-            developer
-          </div>
-        </div>
-      </div>
+      <Header />
       <div className="body">
         <div className="bio-section">
           Kevin Gomez is a full-stack web developer with 7+ years of
