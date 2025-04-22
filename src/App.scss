@@ -1,0 +1,41 @@
+@use 'utils/colors';
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 15vh;
+  background-color: colors.$red-main;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  // box-shadow: 30px 30px colors.$red-highlight;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 2rem;
+  margin-right: 2.5rem;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 2.8rem;
+  padding-bottom: 0.6rem;
+}
+
+.sentence {
+  font-size: 1.7rem;
+}
