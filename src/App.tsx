@@ -13,14 +13,14 @@ function App() {
       animate(".sentence span", {
         y: [
           { to: "-1.25rem", ease: "outExpo", duration: 600 },
-          { to: 0, ease: "outBounce", duration: 800, delay: 100 },
+          { to: 0, ease: "outBounce", duration: 800, delay: 600 },
         ],
         // Property specific parameters
         rotate: {
           from: "-1turn",
-          delay: 0,
+          delay: 500,
         },
-        delay: (_, i) => i * 50, // Function based value
+        delay: (_, i) => i * 50 + 500, // Function based value
         ease: "inOutCirc",
         loopDelay: 2000,
         loop: true,
@@ -29,7 +29,7 @@ function App() {
 
     // Properly cleanup all anime.js instances declared inside the scope
     return () => {
-      if (scope.current) scope.current.revert();
+      scope!.current!.revert();
     };
   }, []);
 
@@ -38,6 +38,7 @@ function App() {
       <div className="header">
         <div className="logo">
           <div className="name">Kevin K Gomez</div>
+          {/* Componentize the "software" string */}
           <div className="sentence">
             is a <span>s</span>
             <span>o</span>
