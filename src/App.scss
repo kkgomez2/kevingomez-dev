@@ -1,4 +1,4 @@
-@use 'utils/colors';
+@use "utils/colors";
 
 #root {
   max-width: 1280px;
@@ -38,4 +38,9 @@
 
 .sentence {
   font-size: 1.7rem;
+  span {
+    display: inline-block;
+  }
 }
+
+
