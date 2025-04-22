@@ -1,14 +1,13 @@
 import "./App.scss";
-import { animate, createScope } from "animejs";
+import { animate, createScope, Scope } from "animejs";
 import { useEffect, useRef } from "react";
 
 function App() {
-  const scope = useRef(null);
+  const scope = useRef<Scope>(null);
   const root = useRef(null);
 
   useEffect(() => {
-    // @ts-nocheck
-    scope.current = createScope({ root }).add((scope) => {
+    scope.current = createScope({ root }).add(() => {
       // Every anime.js instances declared here are now scopped to <div ref={root}>
 
       animate(".sentence span", {
@@ -18,8 +17,8 @@ function App() {
         ],
         // Property specific parameters
         rotate: {
-          from: '-1turn',
-          delay: 0
+          from: "-1turn",
+          delay: 0,
         },
         delay: (_, i) => i * 50, // Function based value
         ease: "inOutCirc",
@@ -29,8 +28,9 @@ function App() {
     });
 
     // Properly cleanup all anime.js instances declared inside the scope
-    // @ts-nocheck
-    return () => scope.current.revert();
+    return () => {
+      if (scope.current) scope.current.revert();
+    };
   }, []);
 
   return (
@@ -48,15 +48,7 @@ function App() {
             <span>r</span>
             <span>e</span>
             <span>&nbsp;</span>
-            <span>d</span>
-            <span>e</span>
-            <span>v</span>
-            <span>e</span>
-            <span>l</span>
-            <span>o</span>
-            <span>p</span>
-            <span>e</span>
-            <span>r</span>
+            developer
           </div>
         </div>
       </div>
