@@ -12,7 +12,7 @@ const Header = () => {
   
         animate(".sentence span", {
           y: [
-            { to: "-1.25rem", ease: "outExpo", duration: 600 },
+            { to: "-0.8rem", ease: "outExpo", duration: 600 },
             { to: 0, ease: "outBounce", duration: 800, delay: 600 },
           ],
           // Property specific parameters
@@ -36,7 +36,7 @@ const Header = () => {
   return (
     <div className="header" ref={root}>
     <div className="logo">
-      <div className="name">Kevin K Gomez</div>
+      <div className="name">Kevin Gomez</div>
       <div className="sentence">
         is a <WordSpan word={"software"} />
         &nbsp;developer
