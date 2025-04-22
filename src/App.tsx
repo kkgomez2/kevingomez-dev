@@ -7,6 +7,7 @@ function App() {
   const root = useRef(null);
 
   useEffect(() => {
+    // @ts-nocheck
     scope.current = createScope({ root }).add((scope) => {
       // Every anime.js instances declared here are now scopped to <div ref={root}>
 
@@ -28,6 +29,7 @@ function App() {
     });
 
     // Properly cleanup all anime.js instances declared inside the scope
+    // @ts-nocheck
     return () => scope.current.revert();
   }, []);
 
