@@ -1,4 +1,4 @@
-import WordSpan from "./wordSpan"
+import WordSpan from "./WordSpan"
 
 const Header = () => {
   return (
