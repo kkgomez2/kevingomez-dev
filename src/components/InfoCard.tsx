@@ -1,9 +1,7 @@
-import React from 'react'
+// const InfoCard = () => {
+//   return (
+//     <div>InfoCard</div>
+//   )
+// }
 
-const InfoCard = () => {
-  return (
-    <div>InfoCard</div>
-  )
-}
-
-export default InfoCard
+// export default InfoCard
