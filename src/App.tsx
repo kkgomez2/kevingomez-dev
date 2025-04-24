@@ -7,18 +7,18 @@ function App() {
       <Header />
       <div className="body">
         <div className="bio-section">
-          <div>
+          <p>
             Kevin Gomez is a <b>full-stack web developer</b> with 7+ years of
             professional experience creating applications.
-          </div>
-          <div>
+          </p>
+          <p>
             He has experience building applications with <b>React, Node, .NET, AWS,
             Azure,</b> and tons more.
-          </div>
-          <div>
+          </p>
+          <p>
             When he’s not doing that, he’s still going outside to play Pokémon
             GO.
-          </div>
+          </p>
         </div>
       </div>
     </div>
