@@ -1,10 +1,7 @@
 @use "utils/colors";
 
-#root {
+.main {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
 .header {
@@ -40,6 +37,35 @@
   font-size: 1.7rem;
   span {
     display: inline-block;
+  }
+}
+
+.body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio-section {
+  background-color: colors.$beige-main;
+  color: colors.$red-dark;
+  font-size: 1.2rem;
+  padding: 30px;
+  min-height: 20vh;
+  max-width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 10px 10px colors.$red-highlight;
+
+  div {
+    margin-bottom: 20px;
+  }
+
+  div:last-child {
+    margin-bottom: 0;
   }
 }
 
