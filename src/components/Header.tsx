@@ -21,9 +21,7 @@ const Header = () => {
             delay: 500,
           },
           delay: (_, i) => i * 50 + 500, // Function based value
-          ease: "inOutCirc",
-          loopDelay: 2000,
-          loop: true,
+          ease: "inOutCirc"
         });
       });
   
@@ -34,7 +32,7 @@ const Header = () => {
     }, []);
 
   return (
-    <div className="header" ref={root}>
+    <header className="header" ref={root}>
     <div className="logo">
       <div className="name">Kevin Gomez</div>
       <div className="sentence">
@@ -42,7 +40,7 @@ const Header = () => {
         &nbsp;developer
       </div>
     </div>
-  </div>
+  </header>
   )
 }
 
