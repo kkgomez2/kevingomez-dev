@@ -13,7 +13,7 @@ const Header = () => {
       animate(".sentence span", {
         y: [
           { to: "-0.8rem", ease: "outExpo", duration: 600 },
-          { to: 0, ease: "outBounce", duration: 400, delay: 800 },
+          { to: 0, ease: "outBounce", duration: 400, delay: 400 },
         ],
         rotate: {
           from: "-1turn",
@@ -30,8 +30,8 @@ const Header = () => {
 
   useEffect(() => {
     const controls = framerAnimate([
-      [wipeScope.current, { x: 2000 }, { ease: "easeInOut", duration: 0.5 }],
-      [wipeScope.current, { opacity: 0 }],
+      [wipeScope.current, { x: 2000, width: 0 }, { ease: "easeInOut", duration: 0.5 }],
+      [wipeScope.current, { display: "none" }],
     ]);
     return () => controls.stop();
   }, []);
