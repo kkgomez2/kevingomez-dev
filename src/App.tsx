@@ -8,12 +8,15 @@ function App() {
       <Header />
       <div className="body">
         <motion.div
-          initial={{ x: 4, y: 4, boxShadow: "0px 0px #ff0b55" }}
+          initial={{ x: 4, y: 4 }}
           animate={{
             x: 0,
             y: 0,
             boxShadow: "10px 10px #ff0b55",
-            transition: { duration: 0.4 },
+            transition: {
+              delay: 0.2,
+              duration: 0.4,
+            },
           }}
           className="bio-section"
         >
