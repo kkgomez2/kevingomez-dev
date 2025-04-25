@@ -13,13 +13,13 @@ const Header = () => {
       animate(".sentence span", {
         y: [
           { to: "-0.8rem", ease: "outExpo", duration: 600 },
-          { to: 0, ease: "outBounce", duration: 800, delay: 600 },
+          { to: 0, ease: "outBounce", duration: 400, delay: 800 },
         ],
         rotate: {
           from: "-1turn",
-          delay: 500,
+          delay: 900,
         },
-        delay: (_, i) => i * 50 + 500,
+        delay: (_, i) => i * 50 + 900,
         ease: "inOutCirc",
       });
     });
