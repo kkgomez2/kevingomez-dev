@@ -20,6 +20,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+*::selection {
+  background: var(--red-highlight);
+  color: white;
+}
+
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
