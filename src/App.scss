@@ -1,7 +1,5 @@
-@use "utils/colors";
-
 .main {
-  max-width: 1280px;  
+  max-width: 1280px;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -10,14 +8,14 @@
 .header {
   width: 100vw;
   height: 15vh;
-  background-color: colors.$red-main;
+  background-color: var(--red-main);
   color: white;
 
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  box-shadow: 0px 7px colors.$red-highlight, 0px 14px colors.$red-dark,
-    0px 21px colors.$beige-main;
+  box-shadow: 0px 7px var(--red-highlight), 0px 14px var(--red-dark),
+    0px 21px var(--beige-main);
 
   .wipe {
     position: absolute;
@@ -25,7 +23,7 @@
     left: 0;
     height: 20vh;
     width: 100%;
-    background-color: colors.$beige-background;
+    background-color: var(--beige-background);
   }
 }
 
@@ -52,31 +50,38 @@
 
 .hero {
   display: flex;
-  align-items: center;
   justify-content: space-around;
-  width: 90vw;
+  align-items: center;
+  width: 80vw;
   margin-top: 10vh;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .hero {
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     height: 100vh;
-    margin-top: 5vh;
+    margin-top: 7vh;
     margin-bottom: 10vh;
   }
 }
 
+.hero-img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero-img {
-  width: 30vw;
-  height: 30vw;
-  outline: colors.$red-dark;
+  width: 20vw;
+  height: 20vw;
+  outline: var(--red-dark);
   outline: solid;
   outline-color: currentcolor;
   outline-width: medium;
   outline-width: 5px;
-  outline-color: colors.$red-dark;
+  outline-color: var(--red-dark);
   outline-offset: 6px;
   object-fit: cover;
   object-position: 20%;
@@ -84,16 +89,35 @@
   z-index: 2;
 }
 
-@media (max-width: 800px) {
-  .hero-img { 
-    width: 50vw;
-    height: 50vw;
+@media (max-width: 1000px) {
+  .hero-img {
+    min-width: 250px;
+    min-height: 250px;
+  }
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-greeting {
+  color: var(--red-dark);
+  font-size: 1.8rem;
+
+  span {
+    display: inline-block;
+  }
+  @media (min-width: 1001px) {
+    h1 {
+      margin-top: 0;
+    }
   }
 }
 
 .bio-section {
-  background-color: colors.$beige-main;
-  color: colors.$red-dark;
+  background-color: var(--beige-main);
+  color: var(--red-dark);
   font-size: 1.2rem;
   padding: 30px;
   min-height: 20vh;
@@ -103,8 +127,8 @@
   justify-content: space-between;
 }
 
-@media (max-width: 800px) {
-  .bio-section { 
+@media (max-width: 1000px) {
+  .bio-section {
     max-width: 80vw;
   }
 }
