@@ -54,6 +54,7 @@
   align-items: center;
   width: 80vw;
   margin-top: 10vh;
+  margin-bottom: 20vh;
 }
 
 @media (max-width: 1000px) {
@@ -131,4 +132,11 @@
   .bio-section {
     max-width: 80vw;
   }
+}
+
+.experience {
+  background-color: var(--red-main);
+  height: 20vh;
+  width: 100vw;
+  color: white;
 }
