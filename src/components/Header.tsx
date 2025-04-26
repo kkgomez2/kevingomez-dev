@@ -30,7 +30,7 @@ const Header = () => {
 
   useEffect(() => {
     const controls = framerAnimate([
-      [wipeScope.current, { x: 2000, width: 0 }, { ease: "easeInOut", duration: 0.5 }],
+      [wipeScope.current, { x: 2000, width: 0 }, { ease: "easeIn", duration: 0.5 }],
       [wipeScope.current, { display: "none" }],
     ]);
     return () => controls.stop();
