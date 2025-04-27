@@ -62,7 +62,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 100vh;
     margin-top: 7vh;
     margin-bottom: 10vh;
   }
@@ -109,6 +108,11 @@
   span {
     display: inline-block;
   }
+
+  @media (max-width: 1000px) {
+    font-size: 1.3rem;
+  }
+
   @media (min-width: 1001px) {
     h1 {
       margin-top: 0;
@@ -117,12 +121,12 @@
 }
 
 .bio-section {
+  max-width: 40vw;
   background-color: var(--beige-main);
   color: var(--red-dark);
   font-size: 1.2rem;
   padding: 30px;
   min-height: 20vh;
-  max-width: 40vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -134,9 +138,15 @@
   }
 }
 
-.experience {
+.container-red {
   background-color: var(--red-main);
-  height: 20vh;
   width: 100vw;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience {
+  width: 80vw;
 }
