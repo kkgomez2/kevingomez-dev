@@ -28,7 +28,7 @@ const Experience = () => {
                 </InViewAppear>
               </div>
               <div>
-                {experience.map(({ title, dateRange, summary, points }, j) => {
+                {experience.map(({ title, dateRange, points }, j) => {
                   return (
                     <div className="experience-position" key={j}>
                       <div className="experience-position-title">
