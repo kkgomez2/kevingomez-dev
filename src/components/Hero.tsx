@@ -45,8 +45,9 @@ const Hero = () => {
             </p>
             <InViewAppear>
               <p>
-                I have experience building applications with{" "}
-                <b>React, Node, .NET, AWS, Azure,</b> and tons more.
+                I've built applications with{" "}
+                <b>React, Node, .NET, AWS, Azure,</b> and a whole lot more. I
+                like to solve problems and make things work.
               </p>
             </InViewAppear>
             <InViewAppear>
