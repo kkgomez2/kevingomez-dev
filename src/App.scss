@@ -50,9 +50,9 @@
 
 .hero {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 80vw;
+  width: 72vw;
   margin-top: 10vh;
   margin-bottom: 20vh;
 }
@@ -121,7 +121,7 @@
 }
 
 .bio-section {
-  max-width: 40vw;
+  max-width: 44vw;
   background-color: var(--beige-main);
   color: var(--red-dark);
   font-size: 1.2rem;
@@ -148,7 +148,11 @@
 }
 
 .experience {
-  width: 80vw;
+  width: 60vw;
+
+  @media (max-width: 1000px) {
+    width: 90vw;
+  }
 }
 
 .experience-employer-section {
