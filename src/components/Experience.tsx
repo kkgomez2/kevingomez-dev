@@ -1,5 +1,6 @@
 import resume from "../data/resume";
 import InViewAppear from "./utilities/InViewAppear";
+import ExperiencePositionItem from "./utilities/ExperiencePositionItem";
 
 const Experience = () => {
   const entries = resume.entries;
@@ -30,32 +31,12 @@ const Experience = () => {
               <div>
                 {experience.map(({ title, dateRange, points }, j) => {
                   return (
-                    <div className="experience-position" key={j}>
-                      <div className="experience-position-title">
-                        <div>
-                          <InViewAppear color="--white">
-                            <h3>{title}</h3>
-                          </InViewAppear>
-                        </div>
-
-                        <InViewAppear color="--white">
-                          <div>{dateRange}</div>
-                        </InViewAppear>
-                      </div>
-                      <div>
-                        {/* {summary} */}
-                        {points.map((point, k) => {
-                          return (
-                            <InViewAppear color="--white">
-                              <div key={k}>
-                                <span style={{ marginRight: "10px" }}>●</span>
-                                {point}
-                              </div>
-                            </InViewAppear>
-                          );
-                        })}
-                      </div>
-                    </div>
+                    <ExperiencePositionItem
+                      key={j}
+                      title={title}
+                      dateRange={dateRange}
+                      points={points}
+                    />
                   );
                 })}
               </div>
