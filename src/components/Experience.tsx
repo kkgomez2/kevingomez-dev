@@ -1,3 +1,4 @@
+import "./Experience.scss";
 import resume from "../data/resume";
 import InViewAppear from "./utilities/InViewAppear";
 import ExperiencePositionItem from "./utilities/ExperiencePositionItem";
@@ -9,8 +10,8 @@ const Experience = () => {
     <div className="container-red">
       <div className="experience">
         <InViewAppear color="--white">
-          <h1>
-            <span>Experience</span>
+          <h1 className="experience-title">
+            Experience
           </h1>
         </InViewAppear>
 
@@ -20,12 +21,12 @@ const Experience = () => {
               <div className="experience-employer-section" key={i}>
                 <InViewAppear color="--white">
                   <div>
-                    <b>{company}</b>
+                    <span className="experience-info experience-company">{company}</span>
                   </div>
                 </InViewAppear>
 
                 <InViewAppear color="--white">
-                  <div>{location}</div>
+                  <div className="experience-info">{location}</div>
                 </InViewAppear>
               </div>
               <div>

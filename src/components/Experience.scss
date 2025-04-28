@@ -1,0 +1,51 @@
+.experience {
+  width: 60vw;
+
+  @media (max-width: 1000px) {
+    width: 90vw;
+  }
+}
+
+.experience-title {
+  font-size: 2.2rem;
+}
+
+.experience-employer-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-shadow: 2px 2px var(--red-dark);
+  div {
+    margin-right: 1px;
+  }
+}
+
+.experience-position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 1.8rem;
+}
+
+.experience-position-heading {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.experience-position-title {
+  background: var(--red-dark);
+  padding: 0 10px;
+}
+
+.experience-info {
+  text-shadow: 2px 2px var(--red-dark);
+  margin-right: 1px;
+}
+
+.experience-company {
+  font-weight: 900;
+  font-size: 1.3rem;
+}
