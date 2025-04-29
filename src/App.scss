@@ -48,6 +48,18 @@
   }
 }
 
+.tech-chip {
+  background: var(--red-highlight);
+  padding: 0.2rem 0.8rem;
+  border-radius: 100px;
+  font-size: 0.8rem;
+}
+
+.tech-chip::selection {
+  background: white;
+  color: var(--red-highlight);
+}
+
 .hero {
   display: flex;
   justify-content: space-between;

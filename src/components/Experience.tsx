@@ -30,13 +30,15 @@ const Experience = () => {
                 </InViewAppear>
               </div>
               <div>
-                {experience.map(({ title, dateRange, points }, j) => {
+                {experience.map(({ title, dateRange, summary, points, technologies }, j) => {
                   return (
                     <ExperiencePositionItem
                       key={j}
                       title={title}
                       dateRange={dateRange}
+                      summary={summary}
                       points={points}
+                      technologies={technologies}
                     />
                   );
                 })}

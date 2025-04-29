@@ -38,6 +38,7 @@
 .experience-position-title {
   background: var(--red-dark);
   padding: 0 10px;
+  cursor: pointer;
 }
 
 .experience-info {
@@ -48,4 +49,14 @@
 .experience-company {
   font-weight: 900;
   font-size: 1.3rem;
+}
+
+.experience-main-text {
+  margin-bottom: 1rem;
+}
+
+.experience-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.3rem;
 }
