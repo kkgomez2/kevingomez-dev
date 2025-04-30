@@ -18,7 +18,7 @@ const Hero = () => {
           <div className="hero-greeting">
             <InViewAppear color="--red-dark">
               <h1>
-                <span>Hi, I'm Kevin.</span>
+                <span>Hi, I'm Kevin!</span>
               </h1>
             </InViewAppear>
           </div>
