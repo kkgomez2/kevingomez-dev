@@ -9,6 +9,8 @@ const resume = {
           dateRange: "Aug 2022 – Jun 2023",
           summary:
             "Led a React-based browser extension project, including designing communication between Gmail and recommended content. Led our team's agile activities, including managing backlog, grooming stories, and retrospectives. Consulted on architecture for a system that would interpret data from backend into a frontend data visualizations site.",
+          simplePoints:
+          ["Led a React-based browser extension project, including designing communication between Gmail and recommended content.", "Led our team's agile activities, including managing backlog, grooming stories, and retrospectives.", "Consulted on architecture for a system that would interpret data from backend into a frontend data visualizations site."],
           points: [
             "Led a React based browser extension project, including designing the communication between standalone apps in an enterprise webpage integration, managed the team backlog with the initiative to preemptively vet stories for effective grooming, and guided team agile activities, planning, and project direction.",
             "Consulted on the design and architecture for a charting visualizations project that would allow developers to generate a fully functional front-end with ease.",
@@ -44,6 +46,7 @@ const resume = {
             "C#",
             "Microsoft Azure",
             "Selenium WebDriver",
+            "SQL",
             "Python",
             "Tailwind",
             "MongoDB",
@@ -74,6 +77,7 @@ const resume = {
             "AWS",
             "Sass CSS",
             "Selenium WebDriver",
+            "SQL",
             "Python",
           ],
         },
@@ -87,7 +91,14 @@ const resume = {
             "Adapted to working on both comprehensive legacy software written in Visual Basic, C#, etc., and the newest JavaScript frameworks, including Ember, in an Agile environment with high profile client negotiation.",
             "Took the initiative to write documentation for long undocumented info, including legacy monolith codebase local setup.",
           ],
-          technologies: [".NET", "Visual Basic", "C#", "Ember.js", "Less CSS", "SQL"],
+          technologies: [
+            ".NET",
+            "Visual Basic",
+            "C#",
+            "Ember.js",
+            "Less CSS",
+            "SQL",
+          ],
         },
       ],
     },
