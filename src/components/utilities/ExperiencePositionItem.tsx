@@ -50,12 +50,13 @@ const ExperiencePositionItem = ({
           {showDetail && (
             <motion.div
             initial={{ x: 4, y: 4 }}
+            className="experience-detail-section"
             animate={{
               x: 0,
               y: 0,
               background: "var(--beige-main)",
               color: "var(--red-dark)",
-              padding: 10,
+              padding: 30,
               boxShadow: "10px 10px var(--red-dark)",
               transition: {
                 delay: 0.2,
@@ -65,7 +66,7 @@ const ExperiencePositionItem = ({
               {points.map((point, i) => {
                 return (
                   <InViewAppear color="--red-dark">
-                    <div key={i}>
+                    <div className="experience-point" key={i}>
                       <span style={{ marginRight: "10px" }}>●</span>
                       {point}
                     </div>
