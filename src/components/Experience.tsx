@@ -17,10 +17,10 @@ const Experience = () => {
         {entries.map(({ company, location, experience }, i) => {
           return (
             <>
-              <div className="experience-employer-section" key={i}>
+              <div className="experience-organization-header" key={i}>
                 <InViewAppear color="--white">
                   <div>
-                    <span className="experience-info experience-company">
+                    <span className="experience-info experience-organization">
                       {company}
                     </span>
                   </div>
@@ -50,19 +50,26 @@ const Experience = () => {
           );
         })}
 
-        <div>
-          <h2>Education</h2>
-          <div>
-            <div>{education.school}</div>
+        <h2>Education</h2>
+        <div className="experience-education-item">
+          <div className="experience-organization-header">
+            <div className="experience-info experience-organization">
+              {education.school}
+            </div>
+
+            <div className="experience-info experience-location">{education.location}</div>
           </div>
-          <div>
-            <div>
-              <div>
-                <div>{education.major}</div>
-                <div>{education.minor}</div>
+          <div className="experience-education-item">
+            <div className="experience-education-heading">
+              <div className="experience-education-list">
+                <span className="experience-info experience-position-title">
+                  {education.major}
+                </span>
+
+                <span className="chip">{education.minor}</span>
               </div>
 
-              <div>{education.dateRange}</div>
+              <div className="experience-info">{education.dateRange}</div>
             </div>
           </div>
         </div>

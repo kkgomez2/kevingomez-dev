@@ -1,5 +1,6 @@
 .experience {
   width: 60vw;
+  margin-bottom: 7vh;
 
   @media (max-width: 1000px) {
     width: 90vw;
@@ -10,11 +11,15 @@
   font-size: 2.2rem;
 }
 
-.experience-employer-section {
+.experience-organization-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-shadow: 2px 2px var(--red-dark);
+  margin-bottom: 5px;
+
+  width: 100%;
+
   div {
     margin-right: 1px;
   }
@@ -24,7 +29,7 @@
   }
 }
 
-.experience-company {
+.experience-organization {
   font-weight: 900;
   font-size: 1.3rem;
 
@@ -36,33 +41,47 @@
 .experience-info {
   text-shadow: 2px 2px var(--red-dark);
   margin-right: 1px;
+  text-wrap: balance;
 }
 
-
-.experience-position {
+.experience-position-item,
+.experience-education-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 0 0 1.8rem;
+  width: 100%;
 
   @media (max-width: 475px) {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 
-.experience-position-heading {
+.experience-position-heading,
+.experience-education-heading {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-between;
   text-wrap: nowrap;
+  margin: 0.6rem 0;
 }
 
 .experience-position-title {
   background: var(--red-dark);
   padding: 0 5px;
   cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1rem;
+
+  @media (max-width: 475px) {
+    font-size: 0.9rem;
+  }
+}
+
+.experience-location {
+  text-wrap: nowrap;
 }
 
 .experience-main-text {
@@ -71,7 +90,6 @@
   @media (max-width: 475px) {
     font-size: 1rem;
   }
-
 }
 
 .experience-technologies {
@@ -84,4 +102,11 @@
   gap: 1.2rem;
   display: flex;
   flex-direction: column;
+}
+
+.experience-education-list {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 0.3rem;
 }

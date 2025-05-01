@@ -22,16 +22,16 @@ const ExperiencePositionItem = ({
   const [showDetail, setShowDetail] = useState(false);
 
   return (
-    <div className="experience-position" key={key}>
+    <div className="experience-position-item" key={key}>
       <div className="experience-position-heading">
         <div>
           <InViewAppear color="--white">
-            <h3
+            <div
               className="experience-info experience-position-title"
               onClick={() => setShowDetail(!showDetail)}
             >
               {title}
-            </h3>
+            </div>
           </InViewAppear>
         </div>
 
@@ -81,7 +81,7 @@ const ExperiencePositionItem = ({
           <div className="experience-technologies">
             {technologies.map((tech, j) => {
               return (
-                <span className="tech-chip" key={j}>
+                <span className="chip" key={j}>
                   {tech}
                 </span>
               );
