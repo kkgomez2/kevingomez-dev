@@ -8,14 +8,14 @@
 .header {
   width: 100vw;
   height: 15vh;
-  background-color: var(--red-main);
+  background-color: var(--brand-main);
   color: white;
 
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  box-shadow: 0px 7px var(--red-highlight), 0px 14px var(--red-dark),
-    0px 21px var(--beige-main);
+  box-shadow: 0px 7px var(--brand-highlight), 0px 14px var(--brand-dark),
+    0px 21px var(--sub-main);
 
   .wipe {
     position: absolute;
@@ -23,7 +23,7 @@
     left: 0;
     height: 20vh;
     width: 100%;
-    background-color: var(--beige-background);
+    background-color: var(--sub-background);
   }
 }
 
@@ -49,7 +49,7 @@
 }
 
 .chip {
-  background: var(--red-highlight);
+  background: var(--brand-highlight);
   padding: 0.2rem 0.8rem;
   border-radius: 100px;
   font-size: 0.8rem;
@@ -58,7 +58,7 @@
 
 .chip::selection {
   background: white;
-  color: var(--red-highlight);
+  color: var(--brand-highlight);
 }
 
 .hero {
@@ -90,12 +90,12 @@
 .hero-img {
   width: 20vw;
   height: 20vw;
-  outline: var(--red-dark);
+  outline: var(--brand-dark);
   outline: solid;
   outline-color: currentcolor;
   outline-width: medium;
   outline-width: 5px;
-  outline-color: var(--red-dark);
+  outline-color: var(--brand-dark);
   outline-offset: 6px;
   object-fit: cover;
   object-position: 20%;
@@ -116,7 +116,7 @@
 }
 
 .hero-greeting {
-  color: var(--red-dark);
+  color: var(--brand-dark);
   font-size: 1.8rem;
 
   span {
@@ -136,8 +136,8 @@
 
 .bio-section {
   max-width: 44vw;
-  background-color: var(--beige-main);
-  color: var(--red-dark);
+  background-color: var(--sub-main);
+  color: var(--brand-dark);
   font-size: 1.2rem;
   padding: 30px;
   min-height: 20vh;
@@ -154,7 +154,7 @@
 }
 
 .container-red {
-  background-color: var(--red-main);
+  background-color: var(--brand-main);
   width: 100vw;
   color: white;
   display: flex;

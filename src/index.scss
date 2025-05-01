@@ -2,11 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --red-main: #d84040;
-  --red-highlight: #ff0b55;
-  --red-dark: #a31d1d;
-  --beige-main: #ecdcbf;
-  --beige-background: #f8f2de;
+  --brand-main: #d84040;
+  --brand-highlight: #ff0b55;
+  --brand-dark: #a31d1d;
+  --sub-main: #ecdcbf;
+  --sub-background: #f8f2de;
   --teal: #1dcd9f;
   --white: #fff;
 
@@ -14,7 +14,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  background-color: var(--beige-background);
+  background-color: var(--sub-background);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,7 +24,7 @@
 
 
 *::selection {
-  background: var(--red-highlight);
+  background: var(--brand-highlight);
   color: white;
 }
 

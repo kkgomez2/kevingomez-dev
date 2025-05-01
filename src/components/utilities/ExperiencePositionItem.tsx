@@ -54,10 +54,10 @@ const ExperiencePositionItem = ({
             animate={{
               x: 0,
               y: 0,
-              background: "var(--beige-main)",
-              color: "var(--red-dark)",
+              background: "var(--sub-main)",
+              color: "var(--brand-dark)",
               padding: 30,
-              boxShadow: "10px 10px var(--red-dark)",
+              boxShadow: "10px 10px var(--brand-dark)",
               transition: {
                 delay: 0.2,
                 duration: 0.4,
@@ -65,7 +65,7 @@ const ExperiencePositionItem = ({
             }}>
               {points.map((point, i) => {
                 return (
-                  <InViewAppear color="--red-dark">
+                  <InViewAppear color="--brand-dark">
                     <div className="experience-point" key={i}>
                       <span style={{ marginRight: "10px" }}>●</span>
                       {point}
@@ -77,7 +77,7 @@ const ExperiencePositionItem = ({
           )}
         </div>
 
-        <InViewAppear color="--red-highlight">
+        <InViewAppear color="--brand-highlight">
           <div className="experience-technologies">
             {technologies.map((tech, j) => {
               return (

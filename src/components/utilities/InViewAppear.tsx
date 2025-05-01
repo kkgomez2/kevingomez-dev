@@ -10,7 +10,7 @@ interface Props {
 const InViewAppear = ({
   children,
   width = "fit-content",
-  color = "--red-highlight",
+  color = "--brand-highlight",
 }: Props) => {
   const rise = useAnimation();
   const wipe = useAnimation();

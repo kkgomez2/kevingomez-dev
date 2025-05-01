@@ -16,7 +16,7 @@ const Hero = () => {
         </div>
         <div className="hero-text">
           <div className="hero-greeting">
-            <InViewAppear color="--red-dark">
+            <InViewAppear color="--brand-dark">
               <h1>
                 <span>Hi, I'm Kevin!</span>
               </h1>
@@ -27,7 +27,7 @@ const Hero = () => {
             animate={{
               x: 0,
               y: 0,
-              boxShadow: "10px 10px var(--red-highlight)",
+              boxShadow: "10px 10px var(--brand-highlight)",
               transition: {
                 delay: 0.2,
                 duration: 0.4,
