@@ -50,26 +50,37 @@ const Experience = () => {
           );
         })}
 
-        <h2>Education</h2>
+        <InViewAppear color="--white">
+          <h2>Education</h2>
+        </InViewAppear>
         <div className="experience-education-item">
-          <div className="experience-organization-header">
-            <div className="experience-info experience-organization">
-              {education.school}
+          <InViewAppear color="--white">
+            <div className="experience-organization-header">
+              <div className="experience-info experience-organization">
+                {education.school}
+              </div>
+              <div className="experience-info experience-location">
+                {education.location}
+              </div>
             </div>
-
-            <div className="experience-info experience-location">{education.location}</div>
-          </div>
+          </InViewAppear>
           <div className="experience-education-item">
             <div className="experience-education-heading">
               <div className="experience-education-list">
-                <span className="experience-info experience-position-title">
-                  {education.major}
-                </span>
+                <InViewAppear color="--white">
+                  <span className="experience-info experience-position-title">
+                    {education.major}
+                  </span>
+                </InViewAppear>
 
-                <span className="chip">{education.minor}</span>
+                <InViewAppear>
+                  <span className="chip">{education.minor}</span>
+                </InViewAppear>
               </div>
 
-              <div className="experience-info">{education.dateRange}</div>
+              <InViewAppear color="--white">
+                <div className="experience-info">{education.dateRange}</div>
+              </InViewAppear>
             </div>
           </div>
         </div>
