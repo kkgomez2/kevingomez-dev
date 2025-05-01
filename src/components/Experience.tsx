@@ -54,16 +54,19 @@ const Experience = () => {
           <h2>Education</h2>
         </InViewAppear>
         <div className="experience-education-item">
-          <InViewAppear color="--white">
-            <div className="experience-organization-header">
+          <div className="experience-organization-header">
+            <InViewAppear color="--white">
               <div className="experience-info experience-organization">
                 {education.school}
               </div>
+            </InViewAppear>
+
+            <InViewAppear color="--white">
               <div className="experience-info experience-location">
                 {education.location}
               </div>
-            </div>
-          </InViewAppear>
+            </InViewAppear>
+          </div>
           <div className="experience-education-item">
             <div className="experience-education-heading">
               <div className="experience-education-list">
