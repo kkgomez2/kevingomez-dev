@@ -103,6 +103,13 @@ const resume = {
       ],
     },
   ],
+  education: {
+    school: "University of Illinois at Urbana-Champaign",
+    location: "Champaign, IL",
+    major: "B.S. in Computer Science",
+    minor: "Minor in Art and Design",
+    dateRange: "May 2012 – Mar 2016"
+  }
 };
 
 export default resume;
