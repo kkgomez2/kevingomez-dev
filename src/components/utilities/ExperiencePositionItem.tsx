@@ -6,7 +6,7 @@ type Props = {
   key: Key;
   title: String;
   dateRange: String;
-  summary: String;
+  simplePoints: Array<String>;
   points: Array<String>;
   technologies: Array<String>;
 };
@@ -15,7 +15,7 @@ const ExperiencePositionItem = ({
   key,
   title,
   dateRange,
-  summary,
+  simplePoints,
   points,
   technologies,
 }: Props) => {
@@ -42,27 +42,37 @@ const ExperiencePositionItem = ({
       <div>
         <div className="experience-main-text">
           {!showDetail && (
-            <InViewAppear color="--white">
-              <>{summary}</>
-            </InViewAppear>
+            <>
+              {simplePoints.map((point, i) => {
+                return (
+                  <InViewAppear color="--brand-dark">
+                    <div className="experience-point" key={i}>
+                      <span style={{ marginRight: "10px" }}>●</span>
+                      {point}
+                    </div>
+                  </InViewAppear>
+                );
+              })}
+            </>
           )}
 
           {showDetail && (
             <motion.div
-            initial={{ x: 4, y: 4 }}
-            className="experience-detail-section"
-            animate={{
-              x: 0,
-              y: 0,
-              background: "var(--sub-main)",
-              color: "var(--brand-dark)",
-              padding: 30,
-              boxShadow: "10px 10px var(--brand-dark)",
-              transition: {
-                delay: 0.2,
-                duration: 0.4,
-              },
-            }}>
+              initial={{ x: 4, y: 4 }}
+              className="experience-detail-section"
+              animate={{
+                x: 0,
+                y: 0,
+                background: "var(--sub-main)",
+                color: "var(--brand-dark)",
+                padding: 30,
+                boxShadow: "10px 10px var(--brand-dark)",
+                transition: {
+                  delay: 0.2,
+                  duration: 0.4,
+                },
+              }}
+            >
               {points.map((point, i) => {
                 return (
                   <InViewAppear color="--brand-dark">

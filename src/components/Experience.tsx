@@ -32,13 +32,13 @@ const Experience = () => {
               </div>
               <div>
                 {experience.map(
-                  ({ title, dateRange, summary, points, technologies }, j) => {
+                  ({ title, dateRange, simplePoints, points, technologies }, j) => {
                     return (
                       <ExperiencePositionItem
                         key={j}
                         title={title}
                         dateRange={dateRange}
-                        summary={summary}
+                        simplePoints={simplePoints}
                         points={points}
                         technologies={technologies}
                       />
