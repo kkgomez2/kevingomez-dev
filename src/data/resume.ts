@@ -12,7 +12,7 @@ const resume = {
           simplePoints: [
             "Led a React-based browser extension project, including designing communication between multiple Gmail compose windows and our system's recommended content.",
             "Led our team's agile activities, including managing backlog, grooming stories, and retrospectives with product and UX design team.",
-            "Consulted on architecture for a system that would interpret data from backend into a functioning frontend data visualizations site.",
+            "Consulted on architecture for a system that would interpret data from back-end into a functioning front-end data visualizations site.",
           ],
           points: [
             "Led a React based browser extension project, including designing the communication between standalone apps in an enterprise webpage integration, managed the team backlog with the initiative to preemptively vet stories for effective grooming, and guided team agile activities, planning, and project direction.",
