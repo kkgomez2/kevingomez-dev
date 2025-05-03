@@ -8,7 +8,7 @@ const Experience = () => {
   const education = resume.education;
 
   return (
-    <div className="container-red">
+    <div className="experience-container">
       <div className="experience">
         <InViewAppear color="--white">
           <h1 className="experience-title">Experience</h1>

@@ -10,6 +10,7 @@
   height: 15vh;
   background-color: var(--brand-main);
   color: white;
+  z-index: 2;
 
   display: flex;
   align-items: center;
@@ -59,6 +60,14 @@
 .chip::selection {
   background: white;
   color: var(--brand-highlight);
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: var(--sub-background);
 }
 
 .hero {
@@ -153,7 +162,7 @@
   }
 }
 
-.container-red {
+.experience-container {
   background-color: var(--brand-main);
   width: 100vw;
   color: white;

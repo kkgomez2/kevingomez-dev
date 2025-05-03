@@ -3,7 +3,7 @@ import InViewAppear from "../utilities/InViewAppear";
 
 const Hero = () => {
   return (
-    <>
+    <div className="hero-container">
       <div className="hero">
         <div className="hero-img-container">
           <motion.div
@@ -59,7 +59,7 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
