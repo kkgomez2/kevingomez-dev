@@ -1,7 +1,7 @@
 import "./Experience.scss";
-import resume from "../data/resume";
-import InViewAppear from "./utilities/InViewAppear";
-import ExperiencePositionItem from "./utilities/ExperiencePositionItem";
+import resume from "../../data/resume";
+import InViewAppear from "../utilities/InViewAppear";
+import ExperiencePositionItem from "../utilities/ExperiencePositionItem";
 
 const Experience = () => {
   const entries = resume.entries;

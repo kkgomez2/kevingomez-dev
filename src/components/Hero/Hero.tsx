@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import InViewAppear from "./utilities/InViewAppear";
+import InViewAppear from "../utilities/InViewAppear";
 
 const Hero = () => {
   return (

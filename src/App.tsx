@@ -1,7 +1,7 @@
 import "./App.scss";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Experience from "./components/Experience";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import Experience from "./components/Experience/Experience";
 
 function App() {
   return (

@@ -1,4 +1,4 @@
-import WordSpan from "./WordSpan";
+import WordSpan from "../utilities/WordSpan";
 import { animate, createScope, Scope } from "animejs";
 import { useAnimate } from "motion/react";
 import { useEffect, useRef } from "react";
