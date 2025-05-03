@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import InViewAppear from "../utilities/InViewAppear";
+import "./Hero.scss";
 
 const Hero = () => {
   return (
