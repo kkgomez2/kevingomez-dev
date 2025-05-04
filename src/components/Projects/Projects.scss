@@ -68,6 +68,10 @@
   align-items: center;
   justify-content: center;
 
+  .swiper-wrapper {
+    align-items: center;
+  }
+  
   .swiper-slide {
     // external style
     display: flex;
