@@ -2,4 +2,11 @@
   width: 100vw;
   background-color: var(--sub-background);
   color: var(--brand-dark);
+
+  --swiper-navigation-color: var(--brand-dark);
+  --swiper-theme-color: var(--brand-dark);
+}
+
+.projects-item {
+  max-width: 40vw;
 }
