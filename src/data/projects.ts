@@ -9,7 +9,7 @@ const projects = {
       technologies: ["React.js", "AppWrite", "Vite", "Vercel",],
     },
     {
-      title: "Acting Portfolio Site",
+      title: "Acting Portfolio",
       link: "https://kevinkgomez.com",
       image: "/projects/acting.png",
       dateRange: "Jan 2016 - Present",
@@ -17,7 +17,7 @@ const projects = {
       technologies: ["React.js", "Next.js", "Tailwind", "Vercel",],
     },
     {
-      title: "Developer Portfolio Site (this site!)",
+      title: "Developer Portfolio (this site!)",
       link: "https://kevingomez-dev.vercel.app/",
       image: "/projects/here.png",
       dateRange: "Apr 2025 - Present",
