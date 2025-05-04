@@ -10,10 +10,17 @@
   padding: 0.2rem 0.8rem;
   border-radius: 100px;
   font-size: 0.8rem;
+  color: white;
   width: fit-content;
 }
 
 .chip::selection {
   background: white;
   color: var(--brand-highlight);
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.3rem;
 }
