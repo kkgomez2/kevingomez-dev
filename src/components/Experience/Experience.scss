@@ -1,10 +1,6 @@
-.experience {
-  width: 60vw;
-  margin-bottom: 7vh;
-
-  @media (max-width: 1000px) {
-    width: 90vw;
-  }
+.experience-container {
+  background-color: var(--brand-main);
+  color: white;
 }
 
 .experience-title {
@@ -88,14 +84,8 @@
   margin-bottom: 1rem;
 
   @media (max-width: 475px) {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
-}
-
-.experience-technologies {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.2rem 0.3rem;
 }
 
 .experience-detail-section {

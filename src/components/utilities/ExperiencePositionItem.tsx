@@ -88,7 +88,7 @@ const ExperiencePositionItem = ({
         </div>
 
         <InViewAppear color="--brand-highlight">
-          <div className="experience-technologies">
+          <div className="technologies">
             {technologies.map((tech, j) => {
               return (
                 <span className="chip" key={j}>

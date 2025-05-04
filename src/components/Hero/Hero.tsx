@@ -1,9 +1,10 @@
 import { motion } from "motion/react";
 import InViewAppear from "../utilities/InViewAppear";
+import "./Hero.scss";
 
 const Hero = () => {
   return (
-    <>
+    <div className="hero-container">
       <div className="hero">
         <div className="hero-img-container">
           <motion.div
@@ -59,7 +60,7 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
