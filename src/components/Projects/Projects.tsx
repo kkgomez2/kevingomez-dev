@@ -13,7 +13,9 @@ const Projects = () => {
   return (
     <div className="section-container projects-container">
       <div className="section projects">
-        <h1>Personal Projects</h1>
+        <div className="projects-heading">
+          <h1>Personal Projects</h1>
+        </div>
 
         <Swiper
           navigation={true}
@@ -38,17 +40,21 @@ const Projects = () => {
               return (
                 <SwiperSlide>
                   <div key={i} className="projects-item">
-                    <a
-                      href={link}
-                      target="_blank"
-                      className="projects-item-title"
-                    >
-                      <img
-                        style={{ maxWidth: "80%" }}
-                        src={image}
-                        alt={title}
-                      />
-                    </a>
+                    <div className="projects-image-container">
+                      <div className="projects-image-element">
+                        <a
+                          href={link}
+                          target="_blank"
+                          className="projects-item-title"
+                        >
+                          <img
+                            src={image}
+                            alt={title}
+                            className="projects-image"
+                          />
+                        </a>
+                      </div>
+                    </div>
                     <h2>{title}</h2>
                     <p className="projects-item-summary">{summary}</p>
                     <div className="technologies">

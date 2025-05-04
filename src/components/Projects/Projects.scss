@@ -8,17 +8,59 @@
 
 .projects {
   width: 90vw;
+
+  @media (max-width: 1000px) {
+    width: 95vw;
+  }
+
+  @media (max-width: 475px) {
+    width: 100vw;
+  }
+}
+
+.projects-heading {
+  width: 60vw;
+  margin-left: 15vw;
+  text-wrap: nowrap;
+
+  @media (max-width: 1000px) {
+    margin-left: 2vw;
+  }
+
+  @media (max-width: 475px) {
+    margin-left: 5vw;
+  }
 }
 
 .projects-item {
   max-width: 50vw;
   margin-bottom: 8vh;
   background: var(--sub-main);
-  padding: 30px;
+  padding: 25px;
+
+  max-height: 700px;
 
   @media (max-width: 1000px) {
     max-width: 70vw;
   }
+
+  @media (max-width: 475px) {
+    font-size: 0.8rem;
+  }
+}
+
+.projects-image-container {
+}
+
+.projects-image-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-image {
+  width: 100%;
+  max-height: 300px;
 }
 
 .projects-carousel {

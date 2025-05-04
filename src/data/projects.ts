@@ -21,7 +21,7 @@ const projects = {
       link: "https://kevingomez-dev.vercel.app/",
       image: "/projects/here.png",
       dateRange: "Apr 2025 - Present",
-      summary: "Developer resume and portfolio site, written to introduce you to me and my experience. I hadn't had much chance to use Anime.js or Framer Motion (just Motion now I believe) in a professional capacity, so it was nice actually learn how to utilize them here (and beyond!).",
+      summary: "Developer resume and portfolio site, written to introduce you to me and my experience. I hadn't had much chance to use Anime.js or Framer Motion in a professional capacity, so it was nice actually learn how to utilize them here (and beyond!).",
       technologies: ["React.js", "TypeScript", "Anime.js", "Framer Motion", "Vite", "Vercel"],
     },
     {
