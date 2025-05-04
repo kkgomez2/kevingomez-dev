@@ -36,7 +36,7 @@ const Projects = () => {
               return (
                 <SwiperSlide>
                   <div key={i} className="projects-item projects-item-more">
-                    And more to come!
+                    And there's <b>more</b> cooking!
                   </div>
                 </SwiperSlide>
               );
