@@ -13,7 +13,7 @@ const projects = {
       link: "https://kevinkgomez.com",
       image: "/projects/acting.png",
       dateRange: "Jan 2016 - Present",
-      summary: "Acting portfolio site for my voice acting work. Written in Next.js to utilize server-side rendering's SEO benefit. Responsive, with simple three column design to differentiate from other, single column full width sites. But if I could refactor it, I would DEFINITELY re-style it with grid instead of flex.",
+      summary: "Acting portfolio site for my voice acting work. Written in Next.js to utilize server-side rendering's SEO benefit. Responsive, with simple three column design to differentiate from other, single column full width sites. (I'd like refactor it now, but what's there I'm pleased with)",
       technologies: ["React.js", "Next.js", "Tailwind", "Vercel",],
     },
     {
