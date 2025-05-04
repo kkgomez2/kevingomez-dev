@@ -11,15 +11,16 @@ const Projects = () => {
   const entries = projects.entries;
 
   return (
-    <div className="projects-container">
-      <div className="projects">
-        <h1>Projects</h1>
+    <div className="section-container projects-container">
+      <div className="section projects">
+        <h1>Personal Projects</h1>
 
         <Swiper
           navigation={true}
           pagination={{
             clickable: true,
           }}
+          scrollbar={{ draggable: true }}
           modules={[Navigation, Pagination]}
           className="projects-carousel"
         >
@@ -43,7 +44,7 @@ const Projects = () => {
                       className="projects-item-title"
                     >
                       <img
-                        style={{ maxWidth: "500px" }}
+                        style={{ maxWidth: "80%" }}
                         src={image}
                         alt={title}
                       />
