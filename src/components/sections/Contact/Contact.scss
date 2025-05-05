@@ -14,7 +14,13 @@
   color: white;
   text-wrap: balance;
   text-align: center;
-  gap: 1.5rem;
+  gap: 1.9rem;
+
+  font-size: 1.1rem;
+
+  @media (max-width: 495px) {
+    font-size: 0.9rem;
+  }
 }
 
 .contact-heading {
@@ -29,7 +35,12 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 0.3rem;
+
+  gap: 1rem;
+
+  @media (max-width: 495px) {
+    gap: 0.3rem;
+  }
 }
 
 .contact-email {
@@ -38,12 +49,19 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 1.4rem;
+  gap: 1.8rem;
 }
 
 .contact-email-info {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: var(--brand-dark);
+  padding: 0.4rem 0.8rem;
+
+  h2 {
+    margin: 0;
+  }
 }
 
 .contact-sub {
@@ -56,7 +74,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.7rem;
 
   button {
     width: 50%;
@@ -71,7 +89,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.7rem;
 }
 
 .contact-links-list {

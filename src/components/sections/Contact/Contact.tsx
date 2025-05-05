@@ -9,7 +9,7 @@ const Contact = () => {
         </div>
         <div className="contact-body">
           <div className="contact-email">
-            <div>Would love to talk. Shoot me an email here!</div>
+            <div>Let's build something together. Shoot me an email!</div>
             <div className="contact-email-info">
               <img
                 src="/icons/iconfinder_email-letter-inbox-send_2203552.svg"
