@@ -58,14 +58,9 @@ button {
   outline: none;
   border: none;
   cursor: pointer;
-  padding: 1.2rem 2.4rem;
+  // padding: 1.2rem 2.4rem;
   border: 1px solid white;
   background: transparent;
   color: white;
-  font-size: var(--text-sm);
   border-radius: 4px;
-  position: relative;
-  z-index: 20;
-  overflow: hidden;
-  transition: color .2s;
 }
