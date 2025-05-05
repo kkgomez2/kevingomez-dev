@@ -35,9 +35,14 @@ const Projects = () => {
             if (title === "N/A") {
               return (
                 <SwiperSlide>
-                  <div key={i} className="projects-item projects-item-more">
-                    And there's <b>more</b> cooking!
-                  </div>
+                  <MotionBoxShadow
+                    key={i}
+                    className="projects-item projects-item-more"
+                  >
+                    <>
+                      And there's <b>more</b> cooking!
+                    </>
+                  </MotionBoxShadow>
                 </SwiperSlide>
               );
             } else {

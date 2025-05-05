@@ -25,12 +25,12 @@ const projects = {
       technologies: ["React.js", "TypeScript", "Anime.js", "Framer Motion", "Vite", "Vercel"],
     },
     {
-      title: "N/A",
+      title: "",
       link: "",
-      image: "",
+      image: "/projects/cooking.jpg",
       dateRange: "",
-      summary: "",
-      technologies: [""],
+      summary: "And there's more cooking!",
+      technologies: [],
     },
   ],
 };
