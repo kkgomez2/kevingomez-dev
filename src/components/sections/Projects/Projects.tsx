@@ -1,10 +1,10 @@
 import "./Projects.scss";
-import "../../../node_modules/swiper/swiper.scss";
-import "../../../node_modules/swiper/modules/navigation.scss";
-import "../../../node_modules/swiper/modules/pagination.scss";
-import projects from "../../data/projects";
-import InViewAppear from "../utilities/InViewAppear";
-import MotionBoxShadow from "../utilities/MotionBoxShadow";
+import "../../../../node_modules/swiper/swiper.scss";
+import "../../../../node_modules/swiper/modules/navigation.scss";
+import "../../../../node_modules/swiper/modules/pagination.scss";
+import projects from "../../../data/projects";
+import InViewAppear from "../../utilities/InViewAppear";
+import MotionBoxShadow from "../../utilities/MotionBoxShadow";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
