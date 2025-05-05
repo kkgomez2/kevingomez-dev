@@ -2,6 +2,7 @@ import WordSpan from "../../utilities/WordSpan";
 import { animate, createScope, Scope } from "animejs";
 import { useAnimate } from "motion/react";
 import { useEffect, useRef } from "react";
+import "./Header.scss";
 
 const Header = () => {
   const letterScope = useRef<Scope>(null);

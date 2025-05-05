@@ -11,7 +11,7 @@ const Experience = () => {
     <div className="experience-container section-container">
       <div className="experience section">
         <InViewAppear color="--white">
-          <h1 className="experience-title">Experience</h1>
+          <h1 className="section-title">Experience</h1>
         </InViewAppear>
 
         <div className="experience-work-section">

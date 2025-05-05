@@ -17,7 +17,7 @@ const Projects = () => {
       <div className="section projects">
         <div className="projects-heading">
           <InViewAppear color="--brand-dark">
-            <h1>Personal Projects</h1>
+            <h1 className="section-title">Personal Projects</h1>
           </InViewAppear>
         </div>
 

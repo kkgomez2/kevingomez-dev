@@ -1,0 +1,23 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20vh;
+  color: white;
+}
+
+.contact-heading {
+  h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    text-shadow: 3px 3px var(--brand-highlight);
+  }
+}
