@@ -26,7 +26,7 @@ const projects = {
     },
     {
       title: "",
-      link: "",
+      link: "https://www.babi.sh/recipes",
       image: "/projects/cooking.jpg",
       dateRange: "",
       summary: "And there's more cooking!",
