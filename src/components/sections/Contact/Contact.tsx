@@ -9,7 +9,7 @@ const Contact = () => {
         </div>
         <div className="contact-body">
           <div className="contact-email">
-            <div>Shoot me an email here!</div>
+            <div>Would love to talk. Shoot me an email here!</div>
             <div className="contact-email-info">
               <img
                 src="/icons/iconfinder_email-letter-inbox-send_2203552.svg"
@@ -20,30 +20,32 @@ const Contact = () => {
               <h2>kevin@kevingomez.dev</h2>
             </div>
           </div>
-          <div className="contact-resume">
-            You can also download my full resume below:
-            <button>My Resume</button>
-          </div>
-          <div className="contact-links">
-            Or connect with me on LinkedIn or GitHub!
-            <div className="contact-links-list">
-              <div className="contact-link">
-                <img
-                  src="/icons/InBug-White.png"
-                  className="icon"
-                  title="LinkedIn"
-                  alt="LinkedIn icon"
-                />{" "}
-                linkedin.com/in/kkgomez2/
-              </div>
-              <div className="contact-link">
-                <img
-                  src="/icons/github-mark-white.svg"
-                  className="icon"
-                  title="GitHub"
-                  alt="GitHub icon"
-                />{" "}
-                github.com/kkgomez2
+          <div className="contact-sub">
+            <div className="contact-resume">
+              You can also download my full resume below:
+              <button>Resume</button>
+            </div>
+            <div className="contact-links">
+              Or connect with me on LinkedIn or GitHub!
+              <div className="contact-links-list">
+                <div className="contact-link">
+                  <img
+                    src="/icons/InBug-White.png"
+                    className="icon"
+                    title="LinkedIn"
+                    alt="LinkedIn icon"
+                  />{" "}
+                  linkedin.com/in/kkgomez2/
+                </div>
+                <div className="contact-link">
+                  <img
+                    src="/icons/github-mark-white.svg"
+                    className="icon"
+                    title="GitHub"
+                    alt="GitHub icon"
+                  />{" "}
+                  github.com/kkgomez2
+                </div>
               </div>
             </div>
           </div>
