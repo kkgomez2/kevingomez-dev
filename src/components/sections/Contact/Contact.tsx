@@ -1,51 +1,68 @@
 import "./Contact.scss";
+import InViewAppear from "../../utilities/InViewAppear";
 
 const Contact = () => {
   return (
     <div className="contact-container section-container">
       <div className="contact section">
         <div className="contact-heading">
-          <h1 className="section-title">Let's chat!</h1>
+          <InViewAppear>
+            <h1 className="section-title">Let's chat!</h1>
+          </InViewAppear>
         </div>
         <div className="contact-body">
           <div className="contact-email">
-            <div>Let's build something together. Shoot me an email!</div>
-            <div className="contact-email-info">
-              <img
-                src="/icons/iconfinder_email-letter-inbox-send_2203552.svg"
-                className="fill-white icon"
-                title="email"
-                alt="email icon"
-              />
-              <h2>kevin@kevingomez.dev</h2>
-            </div>
+            <InViewAppear color="--white">
+              <div>Let's build something together. Shoot me an email!</div>
+            </InViewAppear>
+
+            <InViewAppear color="--white">
+              <div className="contact-email-info">
+                <img
+                  src="/icons/iconfinder_email-letter-inbox-send_2203552.svg"
+                  className="fill-white icon"
+                  title="email"
+                  alt="email icon"
+                />
+                <h2>kevin@kevingomez.dev</h2>
+              </div>
+            </InViewAppear>
           </div>
           <div className="contact-sub">
-            <div className="contact-resume">
-              You can also download my full resume below:
-              <button>Resume</button>
-            </div>
+            <InViewAppear color="--white">
+              <div className="contact-resume">
+                You can also download my full resume below:
+                <button>Resume</button>
+              </div>
+            </InViewAppear>
             <div className="contact-links">
-              Or connect with me on LinkedIn or GitHub!
+              <InViewAppear color="--white">
+                <>Or connect with me on LinkedIn or GitHub!</>
+              </InViewAppear>
               <div className="contact-links-list">
-                <div className="contact-link">
-                  <img
-                    src="/icons/InBug-White.png"
-                    className="icon"
-                    title="LinkedIn"
-                    alt="LinkedIn icon"
-                  />{" "}
-                  linkedin.com/in/kkgomez2/
-                </div>
-                <div className="contact-link">
-                  <img
-                    src="/icons/github-mark-white.svg"
-                    className="icon"
-                    title="GitHub"
-                    alt="GitHub icon"
-                  />{" "}
-                  github.com/kkgomez2
-                </div>
+                <InViewAppear color="--white">
+                  <div className="contact-link">
+                    <img
+                      src="/icons/InBug-White.png"
+                      className="icon"
+                      title="LinkedIn"
+                      alt="LinkedIn icon"
+                    />{" "}
+                    linkedin.com/in/kkgomez2/
+                  </div>
+                </InViewAppear>
+
+                <InViewAppear color="--white">
+                  <div className="contact-link">
+                    <img
+                      src="/icons/github-mark-white.svg"
+                      className="icon"
+                      title="GitHub"
+                      alt="GitHub icon"
+                    />{" "}
+                    github.com/kkgomez2
+                  </div>
+                </InViewAppear>
               </div>
             </div>
           </div>
