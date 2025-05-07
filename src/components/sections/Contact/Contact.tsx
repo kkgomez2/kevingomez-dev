@@ -32,7 +32,7 @@ const Contact = () => {
             <InViewAppear color="--white">
               <div className="contact-resume">
                 You can also download my full resume below:
-                <button>Resume</button>
+                <button onClick={() => window.open("/Kevin Gomez Resume (2025).pdf")}>Resume</button>
               </div>
             </InViewAppear>
             <div className="contact-links">
