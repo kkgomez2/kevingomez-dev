@@ -58,6 +58,10 @@
 .hero-text {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 495px) {
+    align-items: center;
+  }
 }
 
 .hero-greeting {
