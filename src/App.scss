@@ -39,3 +39,32 @@
     width: 90vw;
   }
 }
+
+.section-title {
+  font-size: 2.2rem;
+}
+
+.fill-white {
+  filter: invert(100%) sepia(4%) saturate(1747%) hue-rotate(254deg)
+    brightness(116%) contrast(100%);
+}
+
+.icon {
+  width: 1.5rem;
+  margin-right: .75rem;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  // padding: 1.2rem 2.4rem;
+  border: 1px solid white;
+  background: white;
+  color: var(--brand-main);
+  border-radius: 4px;
+}
+
+a {
+  color: var(--brand-dark);
+}
