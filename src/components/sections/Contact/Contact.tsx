@@ -16,7 +16,7 @@ const Contact = () => {
               <div>Let's build something together. Shoot me an email!</div>
             </InViewAppear>
 
-            <InViewAppear color="--white">
+            <InViewAppear color="--brand-dark">
               <div className="contact-email-info">
                 <img
                   src="/icons/iconfinder_email-letter-inbox-send_2203552.svg"
@@ -41,27 +41,31 @@ const Contact = () => {
               </InViewAppear>
               <div className="contact-links-list">
                 <InViewAppear color="--white">
-                  <div className="contact-link">
-                    <img
-                      src="/icons/InBug-White.png"
-                      className="icon"
-                      title="LinkedIn"
-                      alt="LinkedIn icon"
-                    />{" "}
-                    linkedin.com/in/kkgomez2/
-                  </div>
+                  <a href="https://linkedin.com/in/kkgomez2" target="_blank">
+                    <div className="contact-link">
+                      <img
+                        src="/icons/InBug-White.png"
+                        className="icon"
+                        title="LinkedIn"
+                        alt="LinkedIn icon"
+                      />{" "}
+                      linkedin.com/in/kkgomez2
+                    </div>
+                  </a>
                 </InViewAppear>
 
                 <InViewAppear color="--white">
-                  <div className="contact-link">
-                    <img
-                      src="/icons/github-mark-white.svg"
-                      className="icon"
-                      title="GitHub"
-                      alt="GitHub icon"
-                    />{" "}
-                    github.com/kkgomez2
-                  </div>
+                  <a href="https://github.com/kkgomez2" target="_blank">
+                    <div className="contact-link">
+                      <img
+                        src="/icons/github-mark-white.svg"
+                        className="icon"
+                        title="GitHub"
+                        alt="GitHub icon"
+                      />{" "}
+                      github.com/kkgomez2
+                    </div>
+                  </a>
                 </InViewAppear>
               </div>
             </div>

@@ -18,6 +18,10 @@
 
   font-size: 1.1rem;
 
+  a {
+    color: white;
+  }
+
   @media (max-width: 495px) {
     font-size: 0.9rem;
   }

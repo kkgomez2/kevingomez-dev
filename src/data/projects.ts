@@ -5,8 +5,8 @@ const projects = {
       link: "https://trending-movies-db.vercel.app/",
       image: "/projects/movies.png",
       dateRange: "Apr 2025",
-      summary: "Simple site to query The Movie Database API, search for the most relevant movies, and also save searches to AppWrite database to serve as 'trending' movies. You have the power to change what's trending! (I invite you to spend some time flooding the search list with your fav.)",
-      technologies: ["React.js", "AppWrite", "Vite", "Vercel",],
+      summary: "Simple site to query The Movie Database API, search for the most relevant movies, and also save searches to Appwrite database to serve as 'trending' movies. You have the power to change what's trending! (I invite you to spend some time flooding the search list with your fav.)",
+      technologies: ["React.js", "Appwrite", "Vite", "Vercel",],
     },
     {
       title: "Acting Portfolio",
