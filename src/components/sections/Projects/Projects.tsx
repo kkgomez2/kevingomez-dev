@@ -13,8 +13,8 @@ const Projects = () => {
   const entries = projects.entries;
 
   return (
-    <div className="section-container projects-container">
-      <div className="section projects">
+    <div className="section-container projects-container segment" id="projects">
+      <section className="section projects">
         <div className="projects-heading">
           <InViewAppear color="--brand-dark">
             <h1 className="section-title">Personal Projects</h1>
@@ -96,7 +96,7 @@ const Projects = () => {
             }
           })}
         </Swiper>
-      </div>
+      </section>
     </div>
   );
 };
