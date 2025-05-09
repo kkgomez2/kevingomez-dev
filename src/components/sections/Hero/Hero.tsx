@@ -4,7 +4,7 @@ import "./Hero.scss";
 
 const Hero = () => {
   return (
-    <div className="hero-container" id="about">
+    <div className="hero-container segment" id="about">
       <section className="hero">
         <div className="hero-img-container">
           <motion.div

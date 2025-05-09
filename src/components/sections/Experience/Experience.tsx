@@ -8,7 +8,7 @@ const Experience = () => {
   const education = resume.education;
 
   return (
-    <div className="experience-container section-container" id="experience">
+    <div className="experience-container section-container segment" id="experience">
       <section className="experience section">
         <InViewAppear color="--white">
           <h1 className="section-title">Experience</h1>

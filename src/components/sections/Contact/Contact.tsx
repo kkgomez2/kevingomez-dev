@@ -3,7 +3,7 @@ import InViewAppear from "../../utilities/InViewAppear";
 
 const Contact = () => {
   return (
-    <div className="contact-container section-container" id="contact">
+    <div className="contact-container section-container segment" id="contact">
       <section className="contact section">
         <div className="contact-heading">
           <InViewAppear>

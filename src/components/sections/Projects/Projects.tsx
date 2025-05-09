@@ -13,7 +13,7 @@ const Projects = () => {
   const entries = projects.entries;
 
   return (
-    <div className="section-container projects-container" id="projects">
+    <div className="section-container projects-container segment" id="projects">
       <section className="section projects">
         <div className="projects-heading">
           <InViewAppear color="--brand-dark">
