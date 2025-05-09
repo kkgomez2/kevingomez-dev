@@ -1,35 +1,36 @@
 .nav-container {
   position: fixed;
-  z-index: 3;
+  // z-index: 3;
   left: 0;
 
-  @media (max-width: 495px) {
-    z-index: 1;
-  }
+  // @media (max-width: 1000px) {
+    z-index: 2;
+  // }
 }
 
 .nav {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   justify-content: center;
   gap: 1.2rem;
-  height: 100vh;
+  // height: 100vh;
 
   background: var(--brand-main);
 
-  @media (max-width: 495px) {
+  // @media (max-width: 1000px) {
     flex-direction: row;
     height: auto;
     width: 100vw;
-  }
+  // }
 }
 
 .nav-item {
   color: white;
   writing-mode: sideways-lr;
   padding: 1rem 0.2rem;
+  cursor: pointer;
 
-  @media (max-width: 495px) {
+  // @media (max-width: 1000px) {
     writing-mode: horizontal-tb;
-  }
+  // }
 }
