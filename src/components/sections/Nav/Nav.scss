@@ -1,0 +1,29 @@
+.nav-container {
+  position: fixed;
+  z-index: 3;
+  left: 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+  height: 100vh;
+
+  @media (max-width: 495px) {
+    flex-direction: row;
+    height: auto;
+    width: 100vw;
+  }
+}
+
+.nav-item {
+  color: var(--brand-dark);
+  writing-mode: sideways-lr;
+  padding: 1rem 0.2rem;
+
+  @media (max-width: 495px) {
+    writing-mode: horizontal-tb;
+  }
+}
