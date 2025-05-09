@@ -88,6 +88,11 @@
     align-items: center;
     justify-content: center;
   }
+
+  button:hover {
+    background-color: var(--brand-highlight);
+    color: white;
+  }
 }
 
 .contact-links {
