@@ -1,10 +1,35 @@
 import "./Contact.scss";
+import { Toaster, toast } from "react-hot-toast";
 import InViewAppear from "../../utilities/InViewAppear";
 
 const Contact = () => {
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText("kevin@kevingomez.dev");
+
+      toast.success('Email copied!', {
+        style: {
+          border: '1px solid var(--brand-dark)',
+          padding: '16px',
+          color: 'var(--brand-dark)',
+        },
+        iconTheme: {
+          primary: 'var(--brand-dark)',
+          secondary: 'white',
+        },
+      });
+    } catch (err: unknown) {
+      if (err && typeof err === "object" && "message" in err) {
+        console.error(err.message);
+      }
+    }
+  };
   return (
     <div className="contact-container section-container segment" id="contact">
       <section className="contact section">
+        <div>
+          <Toaster />
+        </div>
         <div className="contact-heading">
           <InViewAppear>
             <h1 className="section-title">Let's chat!</h1>
@@ -17,7 +42,12 @@ const Contact = () => {
             </InViewAppear>
 
             <InViewAppear color="--brand-dark">
-              <div className="contact-email-info">
+              <div
+                className="contact-email-info"
+                onClick={() => {
+                  copyEmail();
+                }}
+              >
                 <img
                   src="/icons/iconfinder_email-letter-inbox-send_2203552.svg"
                   className="fill-white icon"
@@ -32,7 +62,11 @@ const Contact = () => {
             <InViewAppear color="--white">
               <div className="contact-resume">
                 You can also download my full resume below:
-                <button onClick={() => window.open("/Kevin Gomez Resume (2025).pdf")}>Resume</button>
+                <button
+                  onClick={() => window.open("/Kevin Gomez Resume (2025).pdf")}
+                >
+                  Resume
+                </button>
               </div>
             </InViewAppear>
             <div className="contact-links">
