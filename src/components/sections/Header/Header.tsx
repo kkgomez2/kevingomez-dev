@@ -38,7 +38,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="header">
+    <header className="header" id="header">
       <div className="logo" ref={root}>
         <div className="name">Kevin Gomez</div>
         <div className="sentence">

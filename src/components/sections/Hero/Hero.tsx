@@ -4,8 +4,8 @@ import "./Hero.scss";
 
 const Hero = () => {
   return (
-    <div className="hero-container">
-      <div className="hero">
+    <div className="hero-container" id="about">
+      <section className="hero">
         <div className="hero-img-container">
           <motion.div
             initial={{ y: -25, opacity: 0 }}
@@ -59,7 +59,7 @@ const Hero = () => {
             </InViewAppear>
           </motion.div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

@@ -9,8 +9,8 @@ import Nav from "./components/sections/Nav/Nav";
 function App() {
   return (
     <div className="main">
-      <Nav />
       <Header />
+      <Nav />
       <Hero />
       <Experience />
       <Projects />
