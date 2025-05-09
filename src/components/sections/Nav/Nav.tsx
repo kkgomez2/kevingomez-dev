@@ -3,6 +3,18 @@ import "./Nav.scss";
 
 const Nav = () => {
   const [active, setActive] = useState("");
+  const [display, setDisplay] = useState(true);
+
+  window.onscroll = () => {
+    if (
+      document.body.scrollTop > 50 ||
+      document.documentElement.scrollTop > 50
+    ) {
+      setDisplay(true);
+    } else {
+      setDisplay(false);
+    }
+  };
 
   useEffect(() => {
     const segments = document.querySelectorAll(".segment");
@@ -19,7 +31,7 @@ const Nav = () => {
       threshold: 0.5,
     });
     segments.forEach((segment) => observer.observe(segment));
-  });
+  }, []);
 
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -27,7 +39,7 @@ const Nav = () => {
 
   return (
     <div className="nav-container">
-      <nav className="nav">
+      <nav className="nav" style={{ display: display ? "flex" : "none" }}>
         <div
           className={`nav-item ${
             active === "about" || active === "header" ? "active" : ""
