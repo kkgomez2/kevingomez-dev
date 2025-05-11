@@ -64,6 +64,7 @@
   cursor: pointer;
   background: var(--brand-dark);
   padding: 0.4rem 0.8rem;
+  gap: .75rem;
 
   h2 {
     margin: 0;
@@ -112,4 +113,5 @@
 .contact-link {
   display: flex;
   align-items: center;
+  gap: .75rem;
 }

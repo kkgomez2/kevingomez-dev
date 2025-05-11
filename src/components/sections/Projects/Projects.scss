@@ -53,6 +53,29 @@
   }
 }
 
+.project-item-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.project-item-title {
+  max-width: calc(100% - 60px);
+  h2 {
+    margin: 0;
+  }
+}
+
+.project-item-links {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.portfolio-item-link {
+  display: flex;
+}
+
 .projects-item-more {
   margin-bottom: 0;
 }
