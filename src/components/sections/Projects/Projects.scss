@@ -53,6 +53,16 @@
   }
 }
 
+.project-item-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-item-links {
+  display: flex;
+}
+
 .projects-item-more {
   margin-bottom: 0;
 }

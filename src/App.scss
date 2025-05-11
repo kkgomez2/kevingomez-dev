@@ -50,6 +50,11 @@
     brightness(116%) contrast(100%);
 }
 
+.fill-brand-dark {
+  //Using https://angel-rs.github.io/css-color-filter-generator/
+  filter: brightness(0) saturate(100%) invert(22%) sepia(99%) saturate(1716%) hue-rotate(341deg) brightness(75%) contrast(103%);
+}
+
 .icon {
   width: 1.5rem;
   margin-right: .75rem;
