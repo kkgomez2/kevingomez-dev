@@ -33,20 +33,7 @@ const Projects = () => {
           {" "}
           {entries.map(
             ({ title, link, github, image, summary, technologies }, i) => {
-              if (title === "N/A") {
-                return (
-                  <SwiperSlide>
-                    <MotionBoxShadow
-                      key={i}
-                      className="projects-item projects-item-more"
-                    >
-                      <>
-                        And there's <b>more</b> cooking!
-                      </>
-                    </MotionBoxShadow>
-                  </SwiperSlide>
-                );
-              } else {
+              {
                 return (
                   <SwiperSlide>
                     <MotionBoxShadow key={i} className="projects-item">
@@ -72,32 +59,33 @@ const Projects = () => {
                               </InViewAppear>
                             </h2>
                           </div>
+                          {github && link && (
+                            <InViewAppear color="--brand-dark">
+                              <div className="project-item-links">
+                                <a href={github} target="_blank">
+                                  <div className="portfolio-github-link">
+                                    <img
+                                      src="/icons/github-mark-white.svg"
+                                      className="fill-brand-dark icon"
+                                      title="GitHub link"
+                                      alt="GitHub link"
+                                    />
+                                  </div>
+                                </a>
 
-                          <InViewAppear color="--brand-dark">
-                            <div className="project-item-links">
-                              <a href={github} target="_blank">
-                                <div className="portfolio-github-link">
-                                  <img
-                                    src="/icons/github-mark-white.svg"
-                                    className="fill-brand-dark icon"
-                                    title="GitHub link"
-                                    alt="GitHub link"
-                                  />
-                                </div>
-                              </a>
-
-                              <a href={link} target="_blank">
-                                <div className="portfolio-github-link">
-                                  <img
-                                    src="/icons/link-hyperlink-icon.svg"
-                                    className="fill-brand-dark icon"
-                                    title="Project link"
-                                    alt="Project link"
-                                  />
-                                </div>
-                              </a>
-                            </div>
-                          </InViewAppear>
+                                <a href={link} target="_blank">
+                                  <div className="portfolio-github-link">
+                                    <img
+                                      src="/icons/link-hyperlink-icon.svg"
+                                      className="fill-brand-dark icon"
+                                      title="Project link"
+                                      alt="Project link"
+                                    />
+                                  </div>
+                                </a>
+                              </div>
+                            </InViewAppear>
+                          )}
                         </div>
                         <p className="projects-item-summary">
                           <InViewAppear color="--brand-dark">
