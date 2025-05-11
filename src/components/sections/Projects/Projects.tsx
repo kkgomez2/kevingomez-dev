@@ -52,7 +52,7 @@ const Projects = () => {
                           </div>
                         </div>
                         <div className="project-item-heading">
-                          <div>
+                          <div className="project-item-title">
                             <h2>
                               <InViewAppear color="--brand-dark">
                                 <>{title}</>
@@ -63,7 +63,7 @@ const Projects = () => {
                             <InViewAppear color="--brand-dark">
                               <div className="project-item-links">
                                 <a href={github} target="_blank">
-                                  <div className="portfolio-github-link">
+                                  <div className="portfolio-item-link">
                                     <img
                                       src="/icons/github-mark-white.svg"
                                       className="fill-brand-dark icon"
@@ -74,7 +74,7 @@ const Projects = () => {
                                 </a>
 
                                 <a href={link} target="_blank">
-                                  <div className="portfolio-github-link">
+                                  <div className="portfolio-item-link">
                                     <img
                                       src="/icons/link-hyperlink-icon.svg"
                                       className="fill-brand-dark icon"
