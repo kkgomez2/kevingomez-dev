@@ -20,7 +20,7 @@ const projects = {
     },
     {
       title: "Developer Portfolio (this site!)",
-      link: "https://kevingomez-dev.vercel.app/",
+      link: "https://kevingomez.dev",
       github: "https://github.com/kkgomez2/kevingomez-dev",
       image: "/projects/here.png",
       dateRange: "Apr 2025 - Present",
