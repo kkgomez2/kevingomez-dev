@@ -10,7 +10,7 @@ const resume = {
           summary:
             "Led a React-based browser extension project, including designing communication between Gmail and recommended content. Led our team's agile activities, including managing backlog, grooming stories, and retrospectives. Consulted on architecture for a system that would interpret data from backend into a frontend data visualizations site.",
           simplePoints: [
-            "Led a React-based browser extension project, including designing communication between multiple Gmail compose windows and our system's recommended content.",
+            "Led a React-based browser extension project, including designing communication between multiple instances of the app and our system's recommended content.",
             "Led our team's agile activities, including managing backlog, grooming stories, and retrospectives with product and UX design team.",
             "Consulted on architecture for a system that would allow back-end developers to generate a functioning front-end data visualizations site.",
           ],
@@ -37,7 +37,7 @@ const resume = {
             "Developed an in-browser web conferencing app for sales people, including share screen and audio chat with phone capabilities. Revamped a legacy integration that wrote events to CRM (Salesforce and Dynamics), requiring quick ramp up on learning each system's limits and balancing customer needs. Owned documentation initiative in the midst of team shifting and company acquisition.",
           simplePoints: [
             "Developed an in-browser web conferencing app for sales people, including share screen and audio chat with phone capabilities.",
-            "Revamped a legacy integration that wrote events to CRM (Salesforce and Dynamics), requiring quick ramp up on learning each system's limits and balancing customer needs.",
+            "Revamped legacy event-based system for writing to CRM, Salesforce and Dynamics, mediating stakeholder needs and system constraints.",
             "Led a documentation initiative in the midst of team shifting and company acquisition.",
           ],
           points: [
@@ -78,8 +78,8 @@ const resume = {
           summary:
             "Managed deployment strategy to mitigate risk, utilized Selenium for integrated tests to vet multi-browser functionality in tandem with staged environments and easy rollback strategy. Mentored high school interns from marginalized backgrounds with small, manageable projects in order to bolster their growth in STEM.",
           simplePoints: [
-            "Managed deployment strategy to mitigate risk, utilized Selenium for integrated tests to vet multi-browser functionality in tandem with staged environments and easy rollback strategy.",
-            "Mentored high school interns from marginalized backgrounds with small, manageable projects in order to bolster their growth in STEM.",
+            "Managed deployment risk strategy with automated pipeline tests, Selenium for multiple browsers, staged environments, and easy rollback.",
+            "Mentored high school interns from marginalized backgrounds to familiarize them with the workforce and bolster their growth in STEM.",
           ],
           points: [
             "Managed delivery risk strategy, with automated testing with pipeline tests and Selenium for multi-browser functionality, as well as using staged environments, easy rollback strategy, and planned to deploy on low traffic hours to mitigate client facing issues.",
@@ -103,9 +103,9 @@ const resume = {
           summary:
             "Ramped up on 10+ year old .NET monolith as well as newest JavaScript frameworks, and eventually worked on a system that injected Ember.js web pages into it to allow us to systematically replace pages to easily deploy and deliver new functionality.",
           simplePoints: [
-            "Ramped up on 10+ year old .NET monolith as well as newest JavaScript frameworks, and worked on a system that injected Ember.js to allow us to systematically replace pages to easily deliver new functionality.",
-            "Adapted to working on both comprehensive legacy software written in Visual Basic, C#, etc., and the newest JavaScript frameworks, including Ember.js, in an Agile environment with high profile client negotiation.",
-            "Took the initiative to write documentation for long undocumented info, including legacy monolith codebase local setup.",
+            "Contributed to system that injected Ember.js web pages into a .NET monolith to replace pages individually.",
+            "Adapted to working on 10+ year old codebases and the newest JavaScript frameworks in an Agile environment with high profile client negotiation.",
+            "Took the initiative to write documentation for long undocumented info, including legacy codebase local setup.",
           ],
           points: [
             "Worked on a system that injected Ember web pages into a .NET monolith to allow us to systematically replace pages to deliver new functionality.",
