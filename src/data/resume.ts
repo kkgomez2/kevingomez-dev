@@ -51,7 +51,6 @@ const resume = {
             "Ember.js",
             "Node.js",
             "Sass CSS",
-            "MongoDB",
             "Redux",
             "AWS",
             "C#",
