@@ -1,5 +1,4 @@
-import { Key, useState } from "react";
-import { motion } from "motion/react";
+import { Key } from "react";
 import InViewAppear from "./InViewAppear";
 
 type Props = {

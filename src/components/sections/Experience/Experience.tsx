@@ -34,7 +34,7 @@ const Experience = () => {
                 <div>
                   {experience.map(
                     (
-                      { title, dateRange, simplePoints, points, technologies },
+                      { title, dateRange, simplePoints, technologies },
                       j
                     ) => {
                       return (
