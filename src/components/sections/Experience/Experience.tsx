@@ -43,7 +43,6 @@ const Experience = () => {
                           title={title}
                           dateRange={dateRange}
                           simplePoints={simplePoints}
-                          points={points}
                           technologies={technologies}
                         />
                       );

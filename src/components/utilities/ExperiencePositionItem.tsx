@@ -7,7 +7,6 @@ type Props = {
   title: String;
   dateRange: String;
   simplePoints: Array<String>;
-  points: Array<String>;
   technologies: Array<String>;
 };
 
@@ -16,10 +15,9 @@ const ExperiencePositionItem = ({
   title,
   dateRange,
   simplePoints,
-  points,
   technologies,
 }: Props) => {
-  const [showDetail, setShowDetail] = useState(false);
+  // const [showDetail, setShowDetail] = useState(false);
 
   return (
     <div className="experience-position-item" key={key}>
@@ -28,7 +26,6 @@ const ExperiencePositionItem = ({
           <InViewAppear color="--white">
             <div
               className="experience-info experience-position-title"
-              onClick={() => setShowDetail(!showDetail)}
             >
               {title}
             </div>
@@ -41,7 +38,7 @@ const ExperiencePositionItem = ({
       </div>
       <div>
         <div className="experience-main-text">
-          {!showDetail && (
+          {/* {!showDetail && ( */}
             <>
               {simplePoints.map((point, i) => {
                 return (
@@ -54,9 +51,9 @@ const ExperiencePositionItem = ({
                 );
               })}
             </>
-          )}
+          {/* )} */}
 
-          {showDetail && (
+          {/* {showDetail && (
             <motion.div
               initial={{ x: 4, y: 4 }}
               className="experience-detail-section"
@@ -84,7 +81,7 @@ const ExperiencePositionItem = ({
                 );
               })}
             </motion.div>
-          )}
+          )} */}
         </div>
 
         <InViewAppear color="--brand-highlight">
