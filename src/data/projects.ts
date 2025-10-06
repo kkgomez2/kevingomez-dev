@@ -2,7 +2,7 @@ const projects = {
   entries: [
     {
       title: "Movie Search",
-      link: "https://trending-movies-db.vercel.app/",
+      link: "https://movies-search-7zs.pages.dev/",
       github: "https://github.com/kkgomez2/movies-search",
       image: "/projects/movies.png",
       dateRange: "Apr 2025",
